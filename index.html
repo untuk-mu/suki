@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+    <!-- Header -->
+    <header class="py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white mb-4 md:mb-0">
+                About Me
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">About</a></li>
+                    <li><a href="#projects" class="px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">Projects</a></li>
+                    <li><a href="#suggestion" class="px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors">Suggestion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center bg-white text-black p-8 rounded-lg shadow-lg max-w-4xl">
+            <h2 class="text-4xl font-bold mb-4">About Me</h2>
+            <img src="https://files.catbox.moe/wv7pdr.jpg" alt="Photo Profile" class="mx-auto rounded-full mb-4">
+            <p class="text-lg leading-relaxed">
+                Hi! I'm Daffa, someone who likes coding! 
+                I focused on studying javascript, html, and more!. 
+                I also like to design a website or text.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-gradient-to-r from-blue-500 to-purple-500">
+        <div class="container mx-auto text-center p-8 rounded-lg shadow-lg max-w-6xl">
+            <h2 class="text-4xl font-bold text-white mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Ekira Bot</h3>
+                    <p>Ekira Bot, Ekira is a whatsapp bot that can help virtual needs</p>
+                </div>
+                <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Ekira Website</h3>
+                    <p>Ekira Website, Websites that can show all users in the database, can see the play tutorial and can see all Ekira staff</p>
+                </div>
+                <div class="bg-white text-black p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">Website About Me</h3>
+                    <p>Website About Me, Website about myself and all my projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestion" class="py-16">
+        <div class="container mx-auto text-center bg-white text-black p-8 rounded-lg shadow-lg max-w-4xl">
+            <h2 class="text-4xl font-bold mb-4">Suggestion</h2>
+            <p class="text-lg mb-8">If you want to give advice, please give the advice below!.</p>
+            <form action="https://formsubmit.co/nakanokun78@gmail.com" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-lg text-black border border-gray-300" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-lg text-black border border-gray-300" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-3 rounded-lg text-black border border-gray-300" rows="5" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-bold text-white">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-6 bg-purple-900">
+        <div class="container mx-auto text-center">
+            <p class="text-sm text-white">&copy; 2025 Daffa Portofolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
